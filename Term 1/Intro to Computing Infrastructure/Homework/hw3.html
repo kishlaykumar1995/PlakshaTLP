@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="text-align:center;"><b><span style="font-size:18.0pt;color:#009900;">E-A 001 – September 2022.</span></b><span></span></p>
+
+<p align="center" style="text-align:center;"><b><span style="font-size:18.0pt;color:#990000;">Homework 3 </span></b></p>
+
+<p align="center" style="text-align:center;"><b><span style="font-size:18.0pt;color:#990000;">(Due online by Sunday, Sept 25,<sup> </sup>at 11:59pm IST)</span></b></p>
+
+<p align="center" style="text-align:center;"><b><span style="font-size:14.0pt;">Total:
+80 points</span></b><span style="font-size:14.0pt;"></span></p>
+
+<p class="MsoNormal"><b><span>Q. 1.</span></b><span> A disk has an average seek time
+of 3ms (milliseconds), and a rotational speed of 7200 rotations per
+minute.&#160; Each track on the disk has 32 sectors, each of 16KB, and the peak
+transfer from disk to main memory is equals the rate at which contiguous data
+is read off the disk. (Note KB = Kilobytes, whereas Kb = Kilobits).</span></p>
+
+<p class="MsoNormal"><span>(3 + 4 + 4 = 11 points)</span></p>
+
+<p style="margin-left:.5in;text-indent:-.25in;"><b><span><span>a.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;
+</span></span></span></b>What is the peak transfer rate of this disk?</p>
+
+<p style="margin-left:.5in;text-indent:-.25in;"><b><span><span>b.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;
+</span></span></span></b>What is the access time of this disk for
+reading one complete sector? </p>
+
+<p style="margin-left:.5in;text-indent:-.25in;"><b><span><span>c.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;
+</span></span></span></b>A file of size 4MB is loaded from this disk.
+What is the total access time for this file? Assume that files are stored
+non-contiguously, and each contiguous portion making up the file is 3 sectors
+long on average. Keep in mind that when switching from one contiguous portion
+to another, a new seek time and rotational latency is incurred.</p>
+
+<p><b>Q. 2.</b> A machine supports <span class="GramE">16 bit</span> instructions
+and has 32 general purpose registers. The machine supports the following types
+of instructions:</p>
+
+<p>(3 + 8 + 5 + 4 = 20 points)</p>
+
+<p><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>60
+instructions with two register
+fields&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="GramE">&#160;&#160;
+(</span>Type A)</p>
+
+<p><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>30
+instructions with one register
+field&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="GramE">&#160;&#160; (</span>Type B)</p>
+
+<p><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>3
+instructions with a 10 bit immediate field&#160;<span class="GramE">&#160;&#160;
+(</span>Type C)</p>
+
+<p><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>26
+instructions with no
+operands&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="GramE">&#160;&#160; (</span>Type D)</p>
+
+<p style="font-weight:medium;"><b>(a)&#160; </b>Is it possible to design an
+instruction word format for this machine without expanding opcodes?&#160; If
+so, give a design.&#160; If not, give a reason why such a design is not
+possible.&#160; (A design without expanding opcodes is where the entire opcode
+for all instructions is in a single length-invariant opcode field.)</p>
+
+<p style="font-weight:medium;"><b>(b)</b>&#160; Design an instruction word
+format for this machine using expanding opcodes.&#160; For each of the four
+types of instructions, draw the 16-bit instruction; divide it among its
+components; label each with name and number of bits; and specify the particular
+opcode combination numbers for each. (The choice of combinations to use is
+yours).</p>
+
+<p style="font-weight:medium;"><b>(c)</b>&#160; How many more instructions with
+no operands (Type D) could this machine support? Be careful to consider unused
+combinations in all opcode levels.</p>
+
+<p style="font-weight:medium;"><b>(d)</b>&#160; Suppose you need the machine to
+support one instruction with three register fields. Since there is not enough
+room in the instruction word for this new instruction, you must reduce the
+number of instructions currently supported. Suppose you can only afford to
+reduce the number of instructions of one particular type. Which type must you
+choose and what are the new (reduced) number of instructions of that type?</p>
+
+<p>&#160;</p>
+
+<p><b>Q. 3.</b> A possible reduced instruction set machine might support the
+following instructions:</p>
+
+<p style="font-weight:medium;">(8 + 3 + 2 + 2 = 15 points)</p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>ADD
+<span class="SpellE">rd</span>, <span class="SpellE">rs</span>, rt</p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>NAND
+<span class="SpellE">rd</span>, <span class="SpellE">rs</span>, rt</p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>LUI
+<span class="SpellE">rd</span>, <span class="SpellE">imm</span></p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>BEQ
+<span class="SpellE">rs</span>, rt, <span class="SpellE">addr</span></p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>LW
+<span class="SpellE">rd</span>, (rt)</p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>SW
+<span class="SpellE">rs</span>, (rt)</p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>LLI
+<span class="SpellE">rd</span>, <span class="SpellE">imm</span></p>
+
+<p style="font-weight:medium;"><span style="font-size:10.0pt;font-family:Symbol;">&#183;</span><span style="font-size:7.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>JALR
+<span class="SpellE">rd</span>, <span class="SpellE">rs</span></p>
+
+<p style="font-weight:medium;">Suppose that this machine has 8 general purpose
+registers. Also suppose that the immediate operand fields on LUI and LLI can
+hold any integer from -128 to 127. The width of the opcode field is the same
+for every instruction.</p>
+
+<p style="font-weight:medium;">LUI (load upper immediate) and LLI (load lower
+immediate) allow an immediate number to be loaded into a register. LUI loads
+the immediate number into the exact upper half of the register specified by <span class="SpellE">rd</span> while LLI loads the immediate number into the exact
+lower half of rd. Assume that no instructions beside LUI and LLI are needed to
+get an immediate number into a register, and assume that the immediate field is
+the same size in LLI and LUI.</p>
+
+<p style="font-weight:medium;"><b>(a)</b>&#160; Ignoring BEQ, how many bits are
+needed in the instruction word to support all of these instructions?</p>
+
+<p style="font-weight:medium;"><b>(b)</b>&#160; If the instruction word is to
+contain as few bits as possible, how many bits is the BEQ instruction&#39;s address
+field? Assuming that BEQ uses relative addressing, how many instructions ahead
+can it branch to? (Consider that BEQ can branch backwards as well as forwards
+and assume that the BEQ PC-relative displacement value is the number of
+instructions of displacement.).</p>
+
+<p style="font-weight:medium;"><b>(c)</b>&#160; How many bits are stored in each
+<span class="GramE">general purpose</span> register?</p>
+
+<p style="font-weight:medium;"><b>(d)</b>&#160; If LW and SW use register
+indirect addressing, how many addresses can this machine index?</p>
+
+<p class="MsoNoSpacing" style="font-weight:medium;">&#160;</p>
+
+<p><b>Q4.</b>&#160;&#160; In order to perform a disk or network access, it is
+typically necessary for a user to have the operating system communicate with
+the disk or network controllers.&#160; Suppose that in a particular 500 MHz
+computer, it takes 1,000 cycles to trap (interrupt) to the OS.&#160; In
+addition, it takes 8ms for the OS to perform a disk access, or 4<span style="font-family:Symbol;"><span>m</span></span>s for
+the OS to perform a network access.</p>
+
+<p style="margin:0in;">(8 + 4 = 12 points)</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;"><b>(a)</b>&#160; In a disk access, what percentage of the
+delay time is spent in trapping to the OS?&#160; How about in a network access?</p>
+
+<p style="margin:0in;">&#160;&#160;&#160;</p>
+
+<p style="margin:0in;"><b>(b)</b>&#160; Suppose that we can somehow reduce the
+time for the OS to communicate with the network by 40%.&#160; The trap time is
+unchanged. By what percentage can we reduce the total time for a network
+access?</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;"><b>Q5. </b>&#160;A 32-bit DLX computer transfers a
+512-byte sector (128 words) from the hard disk to the main memory by using
+DMA.&#160; The disk reads the sector from the platter into a special memory
+called the disk cache which is part of the disk controller.&#160; Thereafter
+the data is transmitted from the disk cache to the main memory via the bus by
+using DMA.&#160; Compute this DMA transfer time from disk cache to main
+memory.&#160; The following are the parameters we know:</p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;text-indent:-.25in;"><span style="font-size:10.0pt;font-family:Symbol;"><span>&#183;<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span>The bus is 4 words wide and the time to
+propagate a signal on the bus is 4 processor cycles. (This is often called the
+bus cycle time.)</p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;text-indent:-.25in;"><span style="font-size:10.0pt;font-family:Symbol;"><span>&#183;<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span>The disk cache is 1 word wide and has an access
+time of 1 processor cycle.</p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;text-indent:-.25in;"><span style="font-size:10.0pt;font-family:Symbol;"><span>&#183;<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span>The main memory is 16 words wide and has an access
+time of 80 processor cycles. Assume that main memory accessed cannot be
+pipelined (i.e., we must wait for the previous access to finish before the next
+access can be issued.</p>
+
+<p style="margin:0in;">The process of transfer is as follows.&#160; First, four
+words are read from the disk cache into hardware registers.&#160; When done,
+they are sent together on the bus in one transfer.&#160; When four successive
+bus transfers are received at the memory, they are written together to the
+memory.&#160; <i>Different stages in this process are overlapped (pipelined) to
+the extent possible -- carefully think through what can be overlapped</i>.&#160;
+</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;">(12 points)</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;"><b>Q6.</b>&#160;&#160;&#160; Consider the identical
+computer to the one in question 5, but now the sectors are transferred from
+disk cache to main memory by using processor-involved software transfers,
+instead of DMA.&#160; The transfers are done one word at a time by a loop in
+assembly of the form:</p>
+
+<p style="margin:0in;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+</p>
+
+<p style="margin:0in;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+_loop: <span class="GramE">LW&#160; ...</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+/* from memory-mapped disk cache address */</p>
+
+<p style="margin:0in;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+<span class="GramE">SW&#160; ...</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+/* to main memory */</p>
+
+<p style="margin:0in;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+ADDI ...&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+/* register increment for address register to main memory */</p>
+
+<p style="margin:0in;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+BNEZ ..., _Loop&#160;&#160;&#160;&#160; /* branch back to LW for next iteration
+for next word */</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;">Memory mapped locations (the loads above) are not cached
+by the processor caches.&#160; Further, the processor caches use <span class="GramE"><b>write</b></span><b> through</b> for main memory locations. (In a
+write-through cache, <i>all stores are
+written to main memory immediately</i> instead of waiting for eviction of that
+data.). Hence both the loads and stores use the bus. The branch predictor is
+perfect, and thus there are no stalls from control hazards. &#160; What is the
+total transfer time in software for the sector?&#160; How many times faster is DMA
+in question 2 compared to this software transfer?</p>
+
+<p style="margin:0in;">&#160;</p>
+
+<p style="margin:0in;">(10 points)</p>
+
+<p>&#160;</p>
+
+<p>&#160;</p>
+
+<p class="MsoNormal"><span>&#160;</span></p>
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt;">
+
+<p class="MsoNormal"><span>&#160;</span></p>
+
+</blockquote>
+
+</div>
+
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/20.22.8-213/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.3,
+							'renderLatex': true
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/20.22.8-213/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script></body></html>
